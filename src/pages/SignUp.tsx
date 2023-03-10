@@ -13,6 +13,7 @@ export const SignUp = () => {
                     <input type="password" placeholder='Password' className='my-1 rounded-full py-1 px-4 placeholder:text-neutral-500 text-neutral-800 active:border-none'/>
                     <input type="password" placeholder='Confirm Password' className='my-1 rounded-full py-1 px-4 placeholder:text-neutral-500 text-neutral-800 active:border-none'/>
                     <button className=' text-white bg-blue-500 rounded-full py-2 my-5 hover:bg-blue-400 font-bold'>Sign Up</button>
+                    <button className=' text-white bg-red-500 rounded-full py-2 my-5 hover:bg-red-400 font-bold'>Sign Up using Google</button>
                     <button className=' text-white bg-gray-800 rounded-full py-2 my-5 hover:bg-gray-700 font-bold'>Already a member ?</button>
                     </div>
                 </div>

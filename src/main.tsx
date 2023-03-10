@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Feed } from './pages/Feed'
 import { Home } from './pages/Home'
+import { Login } from './pages/LogIn'
 import { SignUp } from './pages/SignUp'
 import './styles/tailwind-default.css'
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/signup',
     element: <SignUp />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
   },
   {
     path: '/feed',
