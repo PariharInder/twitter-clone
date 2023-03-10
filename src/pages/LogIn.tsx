@@ -1,3 +1,4 @@
+import { redirect } from 'react-router-dom'
 import logo from '../assets/twitter-logo.svg'
 
 export const Login = () => {
@@ -15,10 +16,10 @@ export const Login = () => {
                             <input type="checkbox" name="remember-me" id="remember-me" className='mr-2'/>
                             <label htmlFor="checkbox" className='text-gray-300 font-extralight italic'>Remember me</label>
                         </div>
-                        <a href="#"  className='text-gray-300 font-extralight italic'>Forgot Password?</a>
+                        <a href="/#"  className='text-gray-300 font-extralight italic underline'>Forgot Password?</a>
                     </div>
                     <button className=' text-white bg-blue-500 rounded-full py-2 my-5 hover:bg-blue-400 font-bold'>Log In</button>
-                    <button className=' text-white bg-gray-800 rounded-full py-2 my-5 hover:bg-gray-700 font-bold'>Not a member yet?</button>
+                    <a href='./signup' className=' text-white text-center bg-gray-800 rounded-full py-2 my-5 hover:bg-gray-700 font-bold'>Not a member yet?</a>
                     </div>
                 </div>
             </div>
