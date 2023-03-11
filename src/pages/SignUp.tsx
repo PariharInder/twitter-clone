@@ -4,14 +4,14 @@ import logo from '../assets/twitter-logo.svg'
 
 export const SignUp = () => {
 
-    const [email, setEmail] = useState('')
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
-    const [confirmPassword, setConfirmPassword] = useState('')
+    const [email, setEmail] = useState<string>('')
+    const [username, setUsername] = useState<string>('')
+    const [password, setPassword] = useState<string>('')
+    const [confirmPassword, setConfirmPassword] = useState<string>('')
 
     const handleSignUp = () => {
         if(password==confirmPassword) {
-            emailsignup(email, password)
+            emailsignup(email, password, username)
         }
     }
 
