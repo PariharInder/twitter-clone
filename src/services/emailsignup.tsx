@@ -9,7 +9,8 @@ export const emailsignup = (email:string, password:string, username:string) => {
     const user = userCredential.user
     try{
         const userProfile = await addDoc(collection(db, 'profiles'), {
-            id: username
+            id: userCredential.user.uid,
+            handle: username
         })
         console.log('works')
     }
