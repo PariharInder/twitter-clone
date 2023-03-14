@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { emailsignup } from '../services/emailsignup'
 import logo from '../assets/twitter-logo.svg'
+import { useNavigate } from 'react-router-dom'
 
 export const SignUp = () => {
 
@@ -9,9 +10,12 @@ export const SignUp = () => {
     const [password, setPassword] = useState<string>('')
     const [confirmPassword, setConfirmPassword] = useState<string>('')
 
+    const navigator = useNavigate()
+
     const handleSignUp = () => {
         if(password==confirmPassword) {
             emailsignup(email, password, username)
+            navigator('/feed')
         }
     }
 
